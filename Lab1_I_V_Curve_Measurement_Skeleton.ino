@@ -31,7 +31,7 @@ void setup() {
     int Vmid_value = analogRead(Vmid);
     x = float(Vmid_value - Vout_value)*3.3/4095;
     // task1 y = float(Vout_value)*3.3/4095 ; // calculate the voltage at Vout in V for TASK 1 or current in uA for Task 2 3 4
-    y = x*1000 / 2000;
+    y = x*1000 / 22000;
     Serial.print(x); 
     Serial.print(","); // seperate values by comma 
     Serial.print(y);
